@@ -1,0 +1,68 @@
+2025-07-03 16:34:49,808 - ERROR - Malformed JSON log line: Expecting value: line 1 column 1 (char 0) - Line: This is not a JSON log line
+2025-07-03 16:34:49,809 - WARNING - Validation failed for log entry: {"timestamp": "invalid-date", "event_type": "page_view", "session_id": "abc", "user_id": "123", "ip_address": "0.0.0.0", "user_agent": "test", "location": "test", "data": {}}
+2025-07-03 16:34:49,809 - WARNING - Validation failed for log entry: {"event_type": "page_view", "session_id": "abc", "user_id": "123", "ip_address": "0.0.0.0", "user_agent": "test", "location": "test", "data": {}}
+2025-07-03 16:34:49,809 - WARNING - Validation failed for log entry: {"timestamp": "2025-07-03T16:29:10.565498", "event_type": "page_view", "session_id": "abc", "user_id": "123", "ip_address": "0.0.0.0", "user_agent": "test", "location": "test", "data": "not_a_dict"}
+2025-07-03 16:34:49,810 - WARNING - Validation failed for log entry: {"timestamp": "2025-07-03T16:29:10.565498", "event_type": "page_view", "session_id": "abc", "user_id": 123, "ip_address": "0.0.0.0", "user_agent": "test", "location": "test", "data": {}}
+2025-07-03 16:40:01,636 - INFO - Connecté à la base de données SQLite: ecommerce_logs.db
+2025-07-03 16:40:01,649 - INFO - Table 'logs' vérifiée/créée.
+2025-07-03 16:40:01,675 - INFO - Index vérifiés/créés sur la table 'logs'.
+2025-07-03 16:40:01,675 - INFO - Politique de rétention appliquée: 0 logs supprimés (plus anciens que 30 jours).
+2025-07-03 16:40:01,675 - INFO - Démarrage du pipeline de traitement des logs en streaming depuis 'app.log'...
+2025-07-03 16:40:01,687 - INFO - Fichier de log ouvert. En attente de nouvelles lignes...
+2025-07-03 16:40:39,147 - INFO - Pipeline arrêté par l'utilisateur.
+2025-07-03 16:40:39,148 - INFO - 
+--- Métriques de Performance ---
+2025-07-03 16:40:39,148 - INFO - Logs traités au total: 0
+2025-07-03 16:40:39,148 - INFO - Logs parsés avec succès: 0
+2025-07-03 16:40:39,148 - INFO - Logs échoués au parsing/validation: 0
+2025-07-03 16:40:39,148 - INFO - Temps écoulé: 37.47 secondes
+2025-07-03 16:40:39,148 - INFO - Logs par seconde: 0.00
+2025-07-03 16:40:39,148 - INFO - --------------------------------
+
+2025-07-03 16:40:39,148 - INFO - 
+--- Agrégations en Temps Réel ---
+2025-07-03 16:40:39,148 - INFO - Compteurs d'événements par type:
+2025-07-03 16:40:39,149 - INFO - 
+Trafic horaire (par heure de la journée):
+2025-07-03 16:40:39,149 - INFO -   - Heure 00: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 01: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 02: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 03: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 04: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 05: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 06: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 07: 0 logs
+2025-07-03 16:40:39,149 - INFO -   - Heure 08: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 09: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 10: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 11: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 12: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 13: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 14: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 15: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 16: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 17: 0 logs
+2025-07-03 16:40:39,150 - INFO -   - Heure 18: 0 logs
+2025-07-03 16:40:39,151 - INFO -   - Heure 19: 0 logs
+2025-07-03 16:40:39,151 - INFO -   - Heure 20: 0 logs
+2025-07-03 16:40:39,151 - INFO -   - Heure 21: 0 logs
+2025-07-03 16:40:39,151 - INFO -   - Heure 22: 0 logs
+2025-07-03 16:40:39,151 - INFO -   - Heure 23: 0 logs
+2025-07-03 16:40:39,151 - INFO - 
+Trafic par localisation:
+2025-07-03 16:40:39,151 - INFO - 
+Trafic par type d'appareil:
+2025-07-03 16:40:39,151 - INFO - 
+Trafic par OS:
+2025-07-03 16:40:39,151 - INFO - 
+Résumé des achats:
+2025-07-03 16:40:39,151 - INFO -   - Nombre total d'achats: 0
+2025-07-03 16:40:39,152 - INFO -   - Montant total des achats: 0.00
+2025-07-03 16:40:39,152 - INFO - 
+Compteurs d'erreurs par code:
+2025-07-03 16:40:39,152 - INFO - 
+Durée moyenne des sessions: N/A (pas de sessions terminées)
+2025-07-03 16:40:39,152 - INFO - ----------------------------------
+
+2025-07-03 16:40:39,152 - INFO - Statistiques finales du parser: Parsed=0, Failed=0
+2025-07-03 16:40:39,152 - INFO - Connexion à la base de données SQLite fermée.
