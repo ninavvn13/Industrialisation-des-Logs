@@ -1,0 +1,22 @@
+{
+  "index_patterns": ["logs-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1,
+      "index.lifecycle.name": "logs_policy"
+    },
+    "mappings": {
+      "properties": {
+        "timestamp":     { "type": "date" },
+        "event_type":    { "type": "keyword" },
+        "session_id":    { "type": "keyword" },
+        "user_id":       { "type": "keyword" },
+        "ip_address":    { "type": "ip" },
+        "user_agent":    { "type": "text" },
+        "location":      { "type": "keyword" },
+        "data":          { "type": "object", "enabled": true }
+      }
+    }
+  }
+}
